@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 const App = ()=> {
   const[textareaValue, setTextareaValue] = useState("")
+  const[grocerys, setGrocerys] = useState([])
+  const listgrocerys = grocerys.map((grocery, i)=> <li key={i}>{grocery}</li>)
 
   const storeEnteredText = (event)=> {
     setTextareaValue(event.target.value)
@@ -14,7 +16,7 @@ const App = ()=> {
   <div className="App">
     <textarea onChange={storeEnteredText}></textarea>
     <button onClick={handleButtonClick}>Add Item</button>
-    <ul></ul>
+    <ul>{listgrocerys}</ul>
   </div> 
   );
 }
