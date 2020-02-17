@@ -8,3 +8,14 @@ body {
 .title {
   text-align: center;
 }
+
+.groceryitemsbox {
+  outline: none;
+  resize: none;
+  border: 1px solid black; 
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
