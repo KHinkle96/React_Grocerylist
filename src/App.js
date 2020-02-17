@@ -18,7 +18,6 @@ const App = ()=> {
     <button onClick={handleButtonClick}>Add Item</button>
     <ui>
       {listgrocerys}
-      <input name="groceryList" type="checkbox" /> 
     </ui>
   </div> 
   );
